@@ -1,69 +1,81 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-section {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    height: 80px;
-    z-index: 10;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-    position: relative;
     top: 0;
     width: 100%;
-    padding: 10px 5px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     background-color:#CCFFFF;
     z-index: 10;
     position: fixed;
 }
 
 .logo {
-    position: relative;
     width: 170px;
     padding-left: 25px;
-    margin-bottom: 15px;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: 20px;
-    pointer-events: visible; 
+}
+
+nav {
+    background: #CCFFFF;
+    height: 80px;
+    width: 100%;
 }
 
 
-nav a {
-    color: black;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 5px;
-    border-radius: 30px;
-    font: 500;
-    letter-spacing: 1px;
-    transition: 0.5s;
+nav ul {
+    float: right;
     margin-right: 20px;
-    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    background-color: white;
-    color: rgb(0, 0, 0);
+    background: white;
+    transition: 0.3s;
 }
 
-
-nav a{
+.checkbtn {
+    font-size: 30px;
+    color: black;
     float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
 }
 
+
+nav input {
+    margin-top: 25px;
+    width: 40px;
+    height: 28px;
+    float: right;
+    display: none;
+}
 
 .container {
     width: 40%;
@@ -74,8 +86,8 @@ nav a{
 
 .top-wrapper {
     padding: 140px 0 100px 0;
-    background-image: url(/images/bg.png);
-    background-size: 1300px;
+    background-image: url(Background1.png);
+    background-size: 1350px;
     background-position: center;
     color: black;
     text-align: left;
@@ -121,12 +133,4 @@ nav a{
     box-shadow: none;
 }
 
-.checkbtn {
-    font-size: 30px;
-    color:white;
-    float:right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
+
