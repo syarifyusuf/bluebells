@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    height: 80px;
+    z-index: 10;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color:#CCFFFF;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo {
+    position: relative;
+    width: 170px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+    pointer-events: visible; 
+}
+
+
+nav a {
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 5px;
+    border-radius: 30px;
+    font: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+
+nav a{
+    float: right;
+}
+
+
+.container {
+    width: 40%;
+    padding: 20px 20px 60px 20px;
+    background-color:transparent;
+    margin-top: 0px;
+}
+
+.top-wrapper {
+    padding: 140px 0 100px 0;
+    background-image: url(/images/bg.png);
+    background-size: 1300px;
+    background-position: center;
+    color: black;
+    text-align: left;
+
+}
+.top-wrapper h2 {
+    color: black;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.top-wrapper h2 span {
+    color: #fdd400;
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+.top-wrapper p {
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+.donate-btn {
+    color:black;
+    background: #CCFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    box-shadow: 0 7px #AFEEEE;
+}
+
+.donate-btn:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
